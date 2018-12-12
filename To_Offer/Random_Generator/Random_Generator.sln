@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Random_Generator", "Random_Generator\Random_Generator.vcxproj", "{F2D5120A-02B9-4B44-AC7A-E4E4326C1A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2D5120A-02B9-4B44-AC7A-E4E4326C1A6D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F2D5120A-02B9-4B44-AC7A-E4E4326C1A6D}.Debug|Win32.Build.0 = Debug|Win32
+		{F2D5120A-02B9-4B44-AC7A-E4E4326C1A6D}.Release|Win32.ActiveCfg = Release|Win32
+		{F2D5120A-02B9-4B44-AC7A-E4E4326C1A6D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

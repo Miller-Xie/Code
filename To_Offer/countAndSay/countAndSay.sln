@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "countAndSay", "countAndSay\countAndSay.vcxproj", "{AA66FC0B-E3AC-4E85-AA72-A8686C858291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA66FC0B-E3AC-4E85-AA72-A8686C858291}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA66FC0B-E3AC-4E85-AA72-A8686C858291}.Debug|Win32.Build.0 = Debug|Win32
+		{AA66FC0B-E3AC-4E85-AA72-A8686C858291}.Release|Win32.ActiveCfg = Release|Win32
+		{AA66FC0B-E3AC-4E85-AA72-A8686C858291}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
