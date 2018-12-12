@@ -1,0 +1,22 @@
+﻿生成启动时间为 2018/10/24 9:42:38。
+     1>项目“C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\01_string\01_string.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\01_string.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         I:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\xcg\desktop\code_pra\01_string\01_string\01_string\main.cpp(21): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         I:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\Debug\01_string.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\01_string.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\Debug\01_string.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\Debug\01_string.lib" /MACHINE:X86 Debug\main.obj
+         LINK : 没有找到 C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\Debug\01_string.exe 或上一个增量链接没有生成它；正在执行完全链接
+         01_string.vcxproj -> C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\Debug\01_string.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\Debug\01_string.exe;#1" /manifest Debug\01_string.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\01_string.unsuccessfulbuild”。
+         正在对“Debug\01_string.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\xcg\Desktop\Code_Pra\01_string\01_string\01_string\01_string.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.22
