@@ -7,15 +7,15 @@
 
 ## LeetCode编程题解
 * [LeetCode](https://github.com/xcg1995/Code/tree/master/LeetCode) 
-  * [数组](##数组)
-   * [字符串](##字符串)
+   * [数组](https://github.com/xcg1995/Code/blob/master/LeetCode/数组.md)
+   * [字符串](https://github.com/xcg1995/Code/blob/master/LeetCode/字符串.md)
    * [链表](##链表)
    * [二叉树](##二叉树)
    * [图](##图)
    * [线段树](##线段树)
    * [字典树](##字典树)
    * [并查集](##并查集)
-   * [动态规划](https://github.com/xcg1995/Code/blob/master/LeetCode/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93.md)
+   * [动态规划](https://github.com/xcg1995/Code/blob/master/LeetCode/动态规划.md)
    * [贪心](##贪心)
    * [回溯](##回溯)
    * [排序](##排序)
