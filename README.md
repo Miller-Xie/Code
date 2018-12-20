@@ -4,7 +4,7 @@
 * [To_Offer](https://github.com/xcg1995/Code/tree/master/To_Offer)
 主要包括LeetCode和剑指offer上的编程题代码
 * [LeetCode](https://github.com/xcg1995/Code/tree/master/LeetCode) (`LeetCode编程题解`)
- * [数组](##数组)
+   * [数组](##数组)
    * [字符串](##字符串)
    * [链表](##链表)
    * [二叉树](##二叉树)
