@@ -7,7 +7,7 @@
 
 ## LeetCode编程题解
 * [LeetCode](https://github.com/xcg1995/Code/tree/master/LeetCode) 
-   * [数组](##数组)
+  * [数组](##数组)
    * [字符串](##字符串)
    * [链表](##链表)
    * [二叉树](##二叉树)
