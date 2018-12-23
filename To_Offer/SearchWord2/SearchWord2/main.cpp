@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <algorithm>
+#include <unordered_map>
 using namespace std;
 
 class node
@@ -159,6 +160,8 @@ int main()
 
 	}
 
+	unordered_map<int, int> mp;
+	mp['xcg'] = 23;
 	Solution s;
 	s.findWords(board, words);
 
