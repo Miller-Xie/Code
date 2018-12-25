@@ -2,9 +2,8 @@
 ## Algorithm
 * [Algorithm](https://github.com/xcg1995/Code/tree/master/Algorithm) (`常用算法的代码练习，包括排序、dp、贪心等`)
 
-## 剑指offer
-* [To_Offer](https://github.com/xcg1995/Code/tree/master/To_Offer)(`剑指offer题解`)
-
+## 剑指offer题解
+* [To_Offer](https://github.com/xcg1995/Code/tree/master/To_Offer)
 ## LeetCode题解
 * [LeetCode](https://github.com/xcg1995/Code/tree/master/LeetCode) 
    * [数组](https://github.com/xcg1995/Code/blob/master/LeetCode/数组.md)
