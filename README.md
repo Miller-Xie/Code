@@ -1,10 +1,10 @@
 # Coding总结
 
-* [**Algorithm**](https://github.com/xcg1995/Code/tree/master/Algorithm) (`常用算法的代码练习，包括排序、dp、贪心等`)
+* [Algorithm](https://github.com/xcg1995/Code/tree/master/Algorithm) (`常用算法的代码练习，包括排序、dp、贪心等`)
 
-* [**剑指offer题解**](https://github.com/xcg1995/Code/tree/master/To_Offer)
+* [剑指offer题解](https://github.com/xcg1995/Code/tree/master/剑指offer题解)
 
-* [**LeetCode题解**](https://github.com/xcg1995/Code/tree/master/LeetCode) 
+* [LeetCode题解](https://github.com/xcg1995/Code/tree/master/LeetCode) 
    * [数组](https://github.com/xcg1995/Code/blob/master/LeetCode/数组.md)
    * [字符串](https://github.com/xcg1995/Code/blob/master/LeetCode/字符串.md)
    * [链表](https://github.com/xcg1995/Code/blob/master/LeetCode/链表.md)
