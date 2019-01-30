@@ -17,11 +17,10 @@
       * [字典树](https://github.com/xcg1995/Code/blob/master/LeetCode/字典树.md)
       * [并查集](https://github.com/xcg1995/Code/blob/master/LeetCode/并查集.md)
    * **算法**
+      * [排序](https://github.com/xcg1995/Code/blob/master/LeetCode/排序.md)
       * [动态规划](https://github.com/xcg1995/Code/blob/master/LeetCode/动态规划.md)
       * [贪心](https://github.com/xcg1995/Code/blob/master/LeetCode/贪心.md)
       * [回溯](https://github.com/xcg1995/Code/blob/master/LeetCode/回溯.md)
-      * [排序](https://github.com/xcg1995/Code/blob/master/LeetCode/排序.md)
-      * [二分查找](https://github.com/xcg1995/Code/blob/master/LeetCode/二分查找.md)
       * [数学](https://github.com/xcg1995/Code/blob/master/LeetCode/数学.md)
       * [设计](https://github.com/xcg1995/Code/blob/master/LeetCode/设计.md)
       * [其他](https://github.com/xcg1995/Code/blob/master/LeetCode/其他.md)
