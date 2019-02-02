@@ -20,6 +20,7 @@
       * [动态规划](https://github.com/xcg1995/Code/blob/master/LeetCode/动态规划.md)
       * [贪心](https://github.com/xcg1995/Code/blob/master/LeetCode/贪心.md)
       * [回溯](https://github.com/xcg1995/Code/blob/master/LeetCode/回溯.md)
+      * [位运算](https://github.com/Making-It/Code/blob/master/LeetCode/位运算.md)
       * [数学](https://github.com/xcg1995/Code/blob/master/LeetCode/数学.md)
       * [设计](https://github.com/xcg1995/Code/blob/master/LeetCode/设计.md)
       * [其他](https://github.com/xcg1995/Code/blob/master/LeetCode/其他.md)
