@@ -1,7 +1,8 @@
-Bubble_Sort.sdf
+#Ignore search_and_sort_algorithm
+
+Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort.sdf
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort.sln
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort.suo
-Algorithm/search_and_sort_algorithm/.gitignore
 Algorithm/search_and_sort_algorithm/Bubble_Sort/.vs
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Bubble_Sort.vcxproj
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Bubble_Sort.vcxproj.filters
@@ -9,6 +10,7 @@ Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Bubble_Sort.vcxproj.
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Debug
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Debug
 Algorithm/search_and_sort_algorithm/Bubble_Sort/ipch
+
 Algorithm/search_and_sort_algorithm/Insert_Sort/.vs
 Algorithm/search_and_sort_algorithm/Insert_Sort/Debug
 Algorithm/search_and_sort_algorithm/Insert_Sort/Insert_Sort.sdf
@@ -19,6 +21,8 @@ Algorithm/search_and_sort_algorithm/Insert_Sort/Insert_Sort/Insert_Sort.vcxproj
 Algorithm/search_and_sort_algorithm/Insert_Sort/Insert_Sort/Insert_Sort.vcxproj.filters
 Algorithm/search_and_sort_algorithm/Insert_Sort/Insert_Sort/Insert_Sort.vcxproj.user
 Algorithm/search_and_sort_algorithm/Insert_Sort/ipch/
+
+Algorithm/search_and_sort_algorithm/Select_Sort/.vs/
 Algorithm/search_and_sort_algorithm/Select_Sort/Debug/
 Algorithm/search_and_sort_algorithm/Select_Sort/Select_Sort.sdf
 Algorithm/search_and_sort_algorithm/Select_Sort/Select_Sort.sln
@@ -28,6 +32,7 @@ Algorithm/search_and_sort_algorithm/Select_Sort/Select_Sort/Select_Sort.vcxproj
 Algorithm/search_and_sort_algorithm/Select_Sort/Select_Sort/Select_Sort.vcxproj.filters
 Algorithm/search_and_sort_algorithm/Select_Sort/Select_Sort/Select_Sort.vcxproj.user
 Algorithm/search_and_sort_algorithm/Select_Sort/ipch/
+
 Algorithm/search_and_sort_algorithm/heap_sort/.vs/
 Algorithm/search_and_sort_algorithm/heap_sort/Debug/
 Algorithm/search_and_sort_algorithm/heap_sort/heap_sort.sdf
@@ -38,6 +43,7 @@ Algorithm/search_and_sort_algorithm/heap_sort/heap_sort/heap_sort.vcxproj
 Algorithm/search_and_sort_algorithm/heap_sort/heap_sort/heap_sort.vcxproj.filters
 Algorithm/search_and_sort_algorithm/heap_sort/heap_sort/heap_sort.vcxproj.user
 Algorithm/search_and_sort_algorithm/heap_sort/ipch/
+
 Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/.vs/
 Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/Debug/
 Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/ipch/
@@ -48,12 +54,15 @@ Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/merge_sort_nonrecurs
 Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/merge_sort_nonrecursion/merge_sort_nonrecursion.vcxproj
 Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/merge_sort_nonrecursion/merge_sort_nonrecursion.vcxproj.filters
 Algorithm/search_and_sort_algorithm/merge_sort_nonrecursion/merge_sort_nonrecursion/merge_sort_nonrecursion.vcxproj.user
+
 Algorithm/search_and_sort_algorithm/merge_sort_recursion/.vs/
 Algorithm/search_and_sort_algorithm/merge_sort_recursion/Debug/
 Algorithm/search_and_sort_algorithm/merge_sort_recursion/ipch/
 Algorithm/search_and_sort_algorithm/merge_sort_recursion/merge_sort.sdf
 Algorithm/search_and_sort_algorithm/merge_sort_recursion/merge_sort.sln
 Algorithm/search_and_sort_algorithm/merge_sort_recursion/merge_sort.suo
+
+Algorithm/search_and_sort_algorithm/quick_sort/.vs/
 Algorithm/search_and_sort_algorithm/quick_sort/Debug/
 Algorithm/search_and_sort_algorithm/quick_sort/ipch/
 Algorithm/search_and_sort_algorithm/quick_sort/quick_sort.sdf
@@ -63,9 +72,10 @@ Algorithm/search_and_sort_algorithm/quick_sort/quick_sort/Debug/
 Algorithm/search_and_sort_algorithm/quick_sort/quick_sort/quick_sort.vcxproj
 Algorithm/search_and_sort_algorithm/quick_sort/quick_sort/quick_sort.vcxproj.filters
 Algorithm/search_and_sort_algorithm/quick_sort/quick_sort/quick_sort.vcxproj.user
-q
-Algorithm/search_and_sort_algorithm/Select_Sort/.vs/
-Algorithm/search_and_sort_algorithm/quick_sort/.vs/
+
+Algorithm/search_and_sort_algorithm/test/
+
+#Ignore DP
 Algorithm/DP/ExchangeCoin_DP/.vs/
 Algorithm/DP/ExchangeCoin_DP/Debug/
 Algorithm/DP/ExchangeCoin_DP/ExchangeCoin_DP.sdf
@@ -76,7 +86,8 @@ Algorithm/DP/ExchangeCoin_DP/ExchangeCoin_DP/ExchangeCoin_DP.vcxproj
 Algorithm/DP/ExchangeCoin_DP/ExchangeCoin_DP/ExchangeCoin_DP.vcxproj.filters
 Algorithm/DP/ExchangeCoin_DP/ExchangeCoin_DP/ExchangeCoin_DP.vcxproj.user
 Algorithm/DP/ExchangeCoin_DP/ipch/
-Algorithm/search_and_sort_algorithm/binary_search_tree/
+
+Algorithm/DP/MultiSelectionForAim/.vs
 Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim.sdf
 Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim.sln
 Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim.suo
@@ -86,6 +97,8 @@ Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim/MultiSelectionForAim.vcxp
 Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim/MultiSelectionForAim.vcxproj.filters
 Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim/MultiSelectionForAim.vcxproj.user
 Algorithm/DP/MultiSelectionForAim/MultiSelectionForAim/Debug/
+
+Algorithm/DP/MultiSelectionForAim_DP/.vs
 Algorithm/DP/MultiSelectionForAim_DP/Debug/
 Algorithm/DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP.sdf
 Algorithm/DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP.sln
@@ -95,4 +108,3 @@ Algorithm/DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP/MultiSelectionForAi
 Algorithm/DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP.vcxproj.filters
 Algorithm/DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP/MultiSelectionForAim_DP.vcxproj.user
 Algorithm/DP/MultiSelectionForAim_DP/ipch/
-Algorithm/search_and_sort_algorithm/test/
