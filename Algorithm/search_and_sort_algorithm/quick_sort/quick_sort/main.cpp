@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <fstream>
 using namespace std;
 
 pair<int,int> patition_divide(vector<int>& v,int l,int r)
