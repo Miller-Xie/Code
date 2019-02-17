@@ -1,3 +1,10 @@
 Bubble_Sort.sdf
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort.sln
 Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort.suo
+Algorithm/search_and_sort_algorithm/.gitignore
+Algorithm/search_and_sort_algorithm/Bubble_Sort/.vs
+Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Bubble_Sort.vcxproj
+Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Bubble_Sort.vcxproj.filters
+Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Bubble_Sort.vcxproj.user
+Algorithm/search_and_sort_algorithm/Bubble_Sort/Bubble_Sort/Debug
+Algorithm/search_and_sort_algorithm/Bubble_Sort/Debug
