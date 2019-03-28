@@ -2,21 +2,24 @@
 #include <vector>
 using namespace std;
 
+
 void Select_Sort(vector<int>& vec)
 {
-	int len=vec.size();
+	int len = vec.size();
 	for (int i=0;i<len-1;i++)
 	{
-		int min=i;
+		int min = i;
 		for(int j=i+1;j<len;j++)
 		{
-			if(vec[j]<vec[min])
-				min=j;
+			if(vec[j] < vec[min])
+				min = j;
 		}
+
 		swap(vec[min],vec[i]);
 	}
 }
 
+/********²âÊÔÖ÷º¯Êý**********/
 int main()
 {
 	vector<int> vec_in;
