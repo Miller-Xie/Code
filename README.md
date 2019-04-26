@@ -29,7 +29,3 @@
       * [mysql](https://github.com/xcg1995/Code/blob/master/LeetCode/数据库.md)
 
 
-
-**注意**：由于4月份写毕业论文，仓库会停更1个月，5月份会继续更新。。。
-
-
