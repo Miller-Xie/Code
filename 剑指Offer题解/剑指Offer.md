@@ -68,8 +68,92 @@
    
 # 剑指Offer题解
 ## 赋值运算符函数
+
 ## 实现Singleton模式
 ## 数组中重复的数字
+
+[Nowcoder](https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=3&rp=3&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+### 题目描述
+
+在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。
+
+### 解答
+
+遍历数组，判断当前元素`numbers[i]`是否和位置`i`相等：
+
+1. 如果`numbers[i] == i`，则`numbers[i]`位于它自己的位置，`++i`遍历下一个元素；
+2. 否则，找到位置是`numbers[i]`位置的元素`numbers[numbers[i]]`：
+   - 如果`numbers[numbers[i]] == numbers[i]`,则找到重复元素`numbers[i]`
+   - 否则，交换`numbers[numbers[i]]`和`numbers[i]` 
+     重复`情况2`的过程，直到`numbers[i] == i`时，执行`情况1`。
+
+- 时间复杂度：O(*n*)
+- 空间复杂度：O(1)
+
+**C++代码**
+
+```c++
+class Solution {
+public:
+    // Parameters:
+    //        numbers:     an array of integers
+    //        length:      the length of array numbers
+    //        duplication: (Output) the duplicated number in the array number
+    // Return value:       true if the input is valid, and there are some duplications in the array number
+    //                     otherwise false
+    bool duplicate(int numbers[], int length, int* duplication) {
+        if(length == 0)
+            return false;
+        
+        for(int i=0;i<length;i++)
+        {
+            while(i != numbers[i])
+            {
+                int m = numbers[i];
+                if(m != numbers[m])
+                {
+                    swap(numbers[i],numbers[m]);
+                }
+                else{
+                    *duplication = m;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+};
+```
+
+**Python代码**
+
+```python
+# -*- coding:utf-8 -*-
+class Solution:
+    # 这里要特别注意~找到任意重复的一个值并赋值到duplication[0]
+    # 函数返回True/False
+    def duplicate(self, numbers, duplication):
+        # write code here
+        if len(numbers) <= 0:
+            return False
+        
+        for i in range(len(numbers)):
+            while i != numbers[i]:
+                m = numbers[i]
+                if m == numbers[m]:
+                    duplication[0] = m
+                    return True
+                else:
+                    a = m
+                    numbers[i] = numbers[m]
+                    numbers[m] = a
+            
+        return False
+```
+
+
+
 ## 二维数组的查找
 ## 替换空格
 ## 从头到尾打印链表
