@@ -4,7 +4,7 @@
    * 面试题3：[数组中重复的数字](#数组中重复的数字)
    * 面试题4：[二维数组的查找](#二维数组的查找)
    * 面试题5：[替换空格](#替换空格)
-   * 面试题6：[从头到尾打印链表](#从头到尾打印链表)
+   * 面试题6：[从尾到头打印链表](#从尾到头打印链表)
    * 面试题7：[重建二叉树](#重建二叉树)
    * 面试题8：[二叉树的下一个节点](#二叉树的下一个节点)
    * 面试题9：[用两个栈实现队列](#用两个栈实现队列)
@@ -156,7 +156,154 @@ class Solution:
 
 ## 二维数组的查找
 ## 替换空格
-## 从头到尾打印链表
+
+[NowCoder](<https://www.nowcoder.com/practice/4060ac7e3e404ad1a894ef3e17650423?tpId=13&tqId=11155&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking>)
+
+### 题目描述
+
+请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
+
+### 解答
+
+两个首先统计字符串中的空格数`cnt`，设原字符串的长度为`len`，那么替换之后字符串长度为`len + cnt * 2`，的然后定义两个指针`index1`和`index2`，刚开始`index1`和`index2`指向原字符串和新字符串末尾，然后向前反向移动指针，逐个将`index1`位置的字符赋值给`index2`位置，如果`index1`位置遇到空格，则在`index2`位置开始之前的三个位置赋值为"%20"，同时`index2`向前移动3个位置，重复以上过程，直到`index1`到达字符串第一个字符或者`index2 == index1`为止。
+
+**注意**：字符串反向复制，避免内存重叠！
+
+* 时间复杂度：O(*n*)
+
+**C++代码**
+
+```c++
+class Solution {
+public:
+	void replaceSpace(char *str,int length) {
+        if(length <= 0 || !str)
+            return;
+        
+        int cnt=0;
+       for(int i=0;i<length;i++)
+       {
+           if(str[i] == ' ')
+               cnt++;
+       }
+        
+        if(cnt == 0)
+            return;
+        int newLength = length + 2*cnt;
+        int index1 = length - 1;
+        int index2 = newLength-1;
+        while(index1 >= 0 && index2 > index1)
+        {
+            if(str[index1] != ' ')
+            {
+                str[index2--] = str[index1--];
+            }
+            else{
+                str[index2--] = '0';
+                str[index2--] = '2';
+                str[index2--] = '%';
+                index1--;
+            }
+        }
+        
+	}
+};
+```
+
+
+
+**Python代码**
+
+```python
+# -*- coding:utf-8 -*-
+class Solution:
+    # s 源字符串
+    def replaceSpace(self, s):
+        # write code here
+        res = ''
+        for ch in s:
+            if ch != ' ':
+                res += ch
+            else:
+                res += '%20'
+        
+        return res
+```
+
+
+
+## 从尾到头打印链表
+
+### 题目描述
+
+输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
+
+### 解答
+
+#### 方法1
+
+如果允许原地修改链表，转换为**反转链表**问题，详见[反转链表](https://github.com/Making-It/Code/blob/master/LeetCode/链表.md#反转链表)
+
+* 时间复杂度：O(*n*)
+* 空间复杂度：O(1)
+
+#### 方法2
+
+如果不允许原地修改链表，那么可以利用栈后进先出的特点，遍历链表，逐个将链表元素放入栈中，然后依次弹出栈顶元素并打印。
+
+* 时间复杂度：O(*n*)
+* 空间复杂度：O(*n*)
+
+**C++代码**
+
+```c++
+/**
+*  struct ListNode {
+*        int val;
+*        struct ListNode *next;
+*        ListNode(int x) :
+*              val(x), next(NULL) {
+*        }
+*  };
+*/
+class Solution {
+public:
+    vector<int> printListFromTailToHead(ListNode* head) {
+        vector<int> res;
+        if(!head)
+            return res;
+        
+        stack<int> sta;
+        ListNode* p = head;
+        while(p)
+        {
+            sta.push(p->val);
+            p = p->next;
+        }
+        while(!sta.empty())
+        {
+            int a = sta.top();
+            sta.pop();
+            res.push_back(a);
+        }
+        
+        return res;
+    }
+};
+```
+
+
+
+**Python代码**
+
+```python
+
+```
+
+
+
+
+
 ## 重建二叉树
 ## 二叉树的下一个节点
 ## 用两个栈实现队列
