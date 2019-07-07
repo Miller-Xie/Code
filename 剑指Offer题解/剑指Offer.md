@@ -1,6 +1,4 @@
 * **剑指Offer题解**
-   * 面试题1：[赋值运算符函数](#赋值运算符函数)
-   * 面试题2：[实现Singleton模式](#实现Singleton模式)
    * 面试题3：[数组中重复的数字](#数组中重复的数字)
    * 面试题4：[二维数组的查找](#二维数组的查找)
    * 面试题5：[替换空格](#替换空格)
@@ -67,9 +65,6 @@
    * 面试题66：[构建乘积数组](#构建乘积数组)
    
 # 剑指Offer题解
-## 赋值运算符函数
-
-## 实现Singleton模式
 ## 数组中重复的数字
 
 [Nowcoder](https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=3&rp=3&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
@@ -234,6 +229,8 @@ class Solution:
 
 ## 从尾到头打印链表
 
+[NowCoder](<https://www.nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035?tpId=13&tqId=11156&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking>)
+
 ### 题目描述
 
 输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
@@ -297,7 +294,28 @@ public:
 **Python代码**
 
 ```python
+# -*- coding:utf-8 -*-
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
+class Solution:
+    # 返回从尾部到头部的列表值序列，例如[1,2,3]
+    def printListFromTailToHead(self, listNode):
+        # write code here
+        sta = []
+        p = listNode
+        while p:
+            sta.append(p.val)
+            p = p.next
+        
+        res = []
+        while len(sta) > 0:
+            res.append(sta[-1])
+            sta.pop()
+            
+        return res
 ```
 
 
