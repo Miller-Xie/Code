@@ -83,10 +83,10 @@
    - 否则，交换`numbers[numbers[i]]`和`numbers[i]` 
      重复`情况2`的过程，直到`numbers[i] == i`时，执行`情况1`。
 
+**C++代码**
+
 - 时间复杂度：O(*n*)
 - 空间复杂度：O(1)
-
-**C++代码**
 
 ```c++
 class Solution {
@@ -149,8 +149,6 @@ class Solution:
 
 
 
-
-
 ## 二维数组的查找
 
 [NowCoder](<https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=13&tqId=11154&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking>)
@@ -175,13 +173,14 @@ class Solution:
 
 ### 解答
 
-两个首先统计字符串中的空格数`cnt`，设原字符串的长度为`len`，那么替换之后字符串长度为`len + cnt * 2`，的然后定义两个指针`index1`和`index2`，刚开始`index1`和`index2`指向原字符串和新字符串末尾，然后向前反向移动指针，逐个将`index1`位置的字符赋值给`index2`位置，如果`index1`位置遇到空格，则在`index2`位置开始之前的三个位置赋值为"%20"，同时`index2`向前移动3个位置，重复以上过程，直到`index1`到达字符串第一个字符或者`index2 == index1`为止。
+两个首先统计字符串中的空格数`cnt`，设原字符串的长度为`len`，那么替换之后字符串长度为`len + cnt * 2`，然后定义两个指针`index1`和`index2`，刚开始`index1`和`index2`指向原字符串和新字符串末尾，然后向前反向移动指针，逐个将`index1`位置的字符赋值给`index2`位置，如果`index1`位置遇到空格，则在`index2`位置开始之前的三个位置赋值为"%20"，同时`index2`向前移动3个位置，重复以上过程，直到`index1`到达字符串第一个字符或者`index2 == index1`为止。
 
 **注意**：字符串反向复制，避免内存重叠！
 
-* 时间复杂度：O(*n*)
-
 **C++代码**
+
+* 时间复杂度：O(*n*)
+* 空间复杂度：O(1)
 
 ```c++
 class Solution {
@@ -263,10 +262,10 @@ class Solution:
 
 如果不允许原地修改链表，那么可以利用栈后进先出的特点，遍历链表，逐个将链表元素放入栈中，然后依次弹出栈顶元素并打印。
 
+**C++代码**
+
 * 时间复杂度：O(*n*)
 * 空间复杂度：O(*n*)
-
-**C++代码**
 
 ```c++
 /**
@@ -335,18 +334,445 @@ class Solution:
 
 
 
-
-
 ## 重建二叉树
+
+[NowCoder](https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=13&tqId=11157&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+### 题目描述
+
+输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
+
+### 解答
+
+详见LeetCode题解 [从前序与中序遍历序列构造二叉树](https://github.com/Making-It/Code/blob/master/LeetCode/二叉树.md#从前序与中序遍历序列构造二叉树)
+
+
+
 ## 二叉树的下一个节点
+
+[NowCoder]()
+
+### 题目描述
+
+给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。
+
+### 解答
+
+分几种情况考虑：
+
+* 如果节点`pNode`有右子树，那么找到`pNode`右子树的最左节点就是下一个节点
+* 如果节点`pNode`没有右子树，分两种情况：
+  * 如果`pNode`的父节点为空，返回空值`None`
+  * 如果`pNode`是它的父节点的左子节点，那么下一个节点是它的父节点
+  * 如果`pNode`是它的父节点的右子节点，那么从它的父节点一直往上找，直到当前节点的父节点为空或者它是父节点的左子节点为止，此时的父节点就是下一个节点
+
+**C++代码**
+
+```c++
+/*
+struct TreeLinkNode {
+    int val;
+    struct TreeLinkNode *left;
+    struct TreeLinkNode *right;
+    struct TreeLinkNode *next;
+    TreeLinkNode(int x) :val(x), left(NULL), right(NULL), next(NULL) {
+        
+    }
+};
+*/
+class Solution {
+public:
+    TreeLinkNode* GetNext(TreeLinkNode* pNode)
+    {
+        TreeLinkNode* res = nullptr;
+        if(pNode->right)
+        {
+            res = pNode->right;
+            while(res->left)
+            {
+                res = res->left;
+            }
+        }
+        else{
+            if(!pNode->next) return nullptr;
+            if(pNode == pNode->next->left)
+                res = pNode->next;
+            else{
+                res = pNode->next;
+                while(res->next && res == res->next->right)
+                {
+                    res = res->next;
+                }
+                res = res->next;
+            }
+        }
+        
+        return res;
+    }
+};
+```
+
+**Python代码**
+
+```python
+# -*- coding:utf-8 -*-
+# class TreeLinkNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+#         self.next = None
+class Solution:
+    def GetNext(self, pNode):
+        # write code here
+        res = None
+        if pNode.right is not None:
+            res = pNode.right
+            while res.left is not None:
+                res = res.left
+        else:
+            if not pNode.next:
+                return None
+            if pNode.next and pNode == pNode.next.left:
+                res = pNode.next
+            else:
+                res = pNode.next
+                while res.next and res == res.next.right:
+                    res = res.next
+                res = res.next
+        
+        return res
+```
+
+
+
 ## 用两个栈实现队列
+
+[NowCoder](https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=13&tqId=11158&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+### 题目描述
+
+用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
+
+### 解答
+
+结合栈结构先进后出以及队列结构先进先出的特点：
+
+* 当`push`操作时，直接将元素加到栈1中
+* 而当`pop`时，首先检查栈2：
+  * 如果栈2有元素，直接弹出栈2的栈顶元素
+  * 如果栈2为空，则逐个将栈1的元素弹出并加入到栈2中，直到栈1为空，最后弹出栈2的栈顶元素即可
+
+**C++代码**
+
+* 时间复杂度：`push`为O(1)，`pop`为O(*n*)
+* 空间复杂度：O(*n*)
+
+```c++
+class Solution
+{
+public:
+    void push(int node) {
+        stack1.push(node);
+    }
+
+    int pop() {
+        if(stack2.empty())
+        {
+            if(!stack1.empty())
+            {
+                while(!stack1.empty())
+                {
+                    int a=stack1.top();
+                    stack1.pop();
+                    stack2.push(a);
+                }
+            }
+            else
+                return 0;
+        }
+        int res=stack2.top();
+        stack2.pop();
+        return res;
+    }
+
+private:
+    stack<int> stack1;
+    stack<int> stack2;
+};
+```
+
+**Python代码**
+
+```python
+# -*- coding:utf-8 -*-
+class Solution:
+    def __init__(self):
+        self.sta1 = []
+        self.sta2 = []
+    def push(self, node):
+        # write code here
+        self.sta1.append(node)
+    def pop(self):
+        # return xx
+        if len(self.sta2) == 0:
+            if len(self.sta1) == 0:
+                return None
+            else:
+                while len(self.sta1) > 0:
+                    self.sta2.append(self.sta1.pop())
+        return self.sta2.pop()
+```
+
+
+
 ## 裴波那契数列
+
+[NowCoder](https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3?tpId=13&tqId=11160&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+### 题目描述
+
+大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。
+
+n<=39
+
+### 解答
+
+#### 方法1：递归
+
+会进行很多重复计算，需要优化
+
+* 时间复杂度：O(*2<sup>n</sup>*)
+* 空间复杂度：O(*n*)
+
+#### 方法2：迭代
+
+循环代替递归，优化到线性的时间复杂度
+
+**C++代码**
+
+- 时间复杂度：O(*n*)
+- 空间复杂度：O(*1*)
+
+```c++
+class Solution {
+public:
+    int Fibonacci(int n) {
+        if(n <= 0)
+            return 0;
+        if(n == 1 || n == 2)
+            return 1;
+         
+        int pre = 1;
+        int last = 1;
+        int cur;
+        for(int i = 2;i < n;i++)
+        {
+            cur = pre + last;
+             
+            pre = last;
+            last = cur;
+        }
+        return cur;
+    }
+};
+```
+
+**Python代码**
+
+```python
+# -*- coding:utf-8 -*-
+class Solution:
+    def Fibonacci(self, n):
+        # write code here
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        pre,cur = 0,1
+        for i in range(2,n+1):
+            nex = pre + cur
+            pre = cur
+            cur = nex
+        return nex
+```
+
+
+
 ## 旋转数组的最小数字
+
+[NowCoder]()
+
+### 题目描述
+
+
+
+### 解答
+
+
+
+**C++代码**
+
+- 时间复杂度：O()
+- 空间复杂度：O()
+
+```c++
+
+```
+
+**Python代码**
+
+```python
+
+```
+
+
+
 ## 矩阵中的路径
+
+[NowCoder]()
+
+### 题目描述
+
+
+
+### 解答
+
+
+
+**C++代码**
+
+- 时间复杂度：O()
+- 空间复杂度：O()
+
+```c++
+
+```
+
+**Python代码**
+
+```python
+
+```
+
+
+
 ## 机器人的运动范围
+
+[NowCoder]()
+
+### 题目描述
+
+
+
+### 解答
+
+
+
+**C++代码**
+
+- 时间复杂度：O()
+- 空间复杂度：O()
+
+```c++
+
+```
+
+**Python代码**
+
+```python
+
+```
+
+
+
 ## 剪绳子
+
+[NowCoder]()
+
+### 题目描述
+
+
+
+### 解答
+
+
+
+**C++代码**
+
+- 时间复杂度：O()
+- 空间复杂度：O()
+
+```c++
+
+```
+
+**Python代码**
+
+```python
+
+```
+
+
+
 ## 二进制中1的个数
+
+[NowCoder]()
+
+### 题目描述
+
+
+
+### 解答
+
+
+
+**C++代码**
+
+- 时间复杂度：O()
+- 空间复杂度：O()
+
+```c++
+
+```
+
+**Python代码**
+
+```python
+
+```
+
+
+
 ## 数值的整数次方
+
+[NowCoder]()
+
+### 题目描述
+
+
+
+### 解答
+
+
+
+**C++代码**
+
+- 时间复杂度：O()
+- 空间复杂度：O()
+
+```c++
+
+```
+
+**Python代码**
+
+```python
+
+```
+
+
+
 ## 打印从1到最大的n位数
 ## 删除链表的节点
 ## 正则表达式匹配
