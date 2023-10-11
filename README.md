@@ -20,6 +20,8 @@
       * [二分查找](https://github.com/xcg1995/Code/blob/master/LeetCode/二分查找.md)
       * [排序](https://github.com/xcg1995/Code/blob/master/LeetCode/排序.md)
       * [动态规划](https://github.com/xcg1995/Code/blob/master/LeetCode/动态规划.md)
+      * [分治](https://github.com/Miller-Xie/Code/blob/master/LeetCode/%E5%88%86%E6%B2%BB.md)
+      * [记忆化搜索](https://github.com/Miller-Xie/Code/blob/master/LeetCode/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2.md)
       * [贪心](https://github.com/xcg1995/Code/blob/master/LeetCode/贪心.md)
       * [回溯](https://github.com/xcg1995/Code/blob/master/LeetCode/回溯.md)
       * [位运算](https://github.com/Making-It/Code/blob/master/LeetCode/位运算.md)
