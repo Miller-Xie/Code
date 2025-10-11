@@ -16,7 +16,7 @@
       * [线段树](https://github.com/xcg1995/Code/blob/master/LeetCode/线段树.md)
       * [字典树](https://github.com/xcg1995/Code/blob/master/LeetCode/字典树.md)
       * [单调栈](https://github.com/xcg1995/Code/blob/master/LeetCode/单调栈.md)
-      * [单调队列]()
+      * [单调队列](https://github.com/Miller-Xie/Code/blob/master/LeetCode/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97.md)
       * [前缀和](https://github.com/Miller-Xie/Code/blob/master/LeetCode/前缀和.md)
    * **算法**
       * [二分查找](https://github.com/xcg1995/Code/blob/master/LeetCode/二分查找.md)
