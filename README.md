@@ -30,6 +30,7 @@
       * [位运算](https://github.com/Making-It/Code/blob/master/LeetCode/位运算.md)
       * [数学](https://github.com/xcg1995/Code/blob/master/LeetCode/数学.md)
       * [设计](https://github.com/xcg1995/Code/blob/master/LeetCode/设计.md)
+      * [模拟]()
       * [其他](https://github.com/xcg1995/Code/blob/master/LeetCode/其他.md)
    * **数据库**
       * [mysql](https://github.com/xcg1995/Code/blob/master/LeetCode/数据库.md)
